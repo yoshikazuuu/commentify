@@ -4,9 +4,9 @@ import { useState } from "react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { HiDotsVertical } from "react-icons/hi";
 import { TiChevronLeft } from "react-icons/ti";
-import { FiSettings } from "react-icons/fi";
+
 import { HiPaperAirplane, HiPaperClip } from "react-icons/hi2";
-import { CopyBlock } from "react-code-blocks";
+
 import { Code } from "@/components/code-blocks";
 import ScrollToBottom from "react-scroll-to-bottom";
 
@@ -14,7 +14,6 @@ import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
-  DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
@@ -35,7 +34,7 @@ import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
-import { CodeType } from "@/types/code";
+import { type CodeType } from "@/types/code";
 
 export default function Commentify() {
   const [isOpen, setIsOpen] = useState(false);
